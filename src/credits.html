@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="../assets/css/index.css" rel="stylesheet" />
+    <link href="../assets/css/credits.css" rel="stylesheet" />
     <script src="../assets/js/color-modes.js"> </script>
     
     <style>
@@ -147,12 +147,12 @@
     <div class="sticky-bg sticky-top shadow">
         <nav class="navbar navbar-expand-sm p-3">
           <img 
-            src="../assets/images/sigabem-light-mode-without-text.png" 
+            src="../assets/images/logos/sigabem-light-mode-without-text.png" 
             alt="SigaBem Logo" 
             width="50" 
             height="50"
           />
-          <a class="navbar-brand fw-bold ps-3" href="#" id="title-nav">SigaBem</a>
+          <a class="navbar-brand fw-bold ps-3" href="#" id="title-nav">Sigabem</a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -173,70 +173,120 @@
     <div class="container" id="main-content">
 
       <!-- INTRODUÇÃO -->
-      <div class="row featurette" id="introduction">
+      <div class="row featurette py-5" id="introduction">
 
-        <div class="col-md-7 text-start">
-          <h2 class="featurette-heading fw-normal lh-1">Aqui Começa o Conteúdo da Pesquisa</h2>
+        <div class="col-lg-7 text-start align-content-center">
+          <h2 class="featurette-heading fw-normal lh-1">Conheça o time Sigabem</h2>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis iste laudantium repudiandae voluptate deleniti in rerum reiciendis exercitationem dolorem quo! Harum officia saepe, necessitatibus labore consequatur unde assumenda veritatis debitis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi blanditiis optio quis ad libero necessitatibus officia aut quod praesentium nesciunt obcaecati possimus officiis, laborum commodi facere suscipit animi recusandae nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ad. Aperiam, nobis soluta quod repellat illum consequuntur quae laborum velit sit fugit porro odit voluptate ratione dolor deleniti dolore. Consectetur.</p>
         </div>
 
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slide" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
-            <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-          </svg>
+        <div class="col-lg-5">
+          <img 
+            src="../assets/images/credits/team.png" 
+            class="card-img-top img-fluid rounded-3 mb-3 shadow" 
+            width="250"
+            height="250" 
+            alt="acessibility-simbol"
+          />
         </div>
 
       </div>
 
+      <h1 class="mb-3">Coordenadoras</h1>
+
       <!-- CARDS -->
-      <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col col-rows-3 col-rows-lg-2 g-4" id="cards-container">
 
-        <div class="col">
-          <div class="card shadow">
-            
-            <h5 class="card-header text-start">SigaBem App</h5>
-            <div class="card-body text-start">
-              <img src="../assets/images/card-image-example.jpg" class="card-img-top img-fluid" width="300" height="300" alt="...">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col py-3">
+          <div class="card person-card shadow rounded-4"> 
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+
+                <img 
+                  src="caminho/para/foto_da_pessoa.jpg" 
+                  alt="Foto do Membro da Equipe" 
+                  class="rounded-circle me-3" 
+                  style="width: 80px; height: 80px; object-fit: cover;"
+                />
+
+                <div class="flex-grow-1 text-start me-3">
+                  <h5 class="card-title mb-1">Ioná Rameh</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.9rem;">
+                    Professora e coordenadora do LabGeo Ioná Rameh. Dra em Eng. Civil e especialista em Cartografia Aplicada ao Geoprocessamento. Casada. Duas filhas. Foi estudante da antiga ETFPE (hoje IFPE campus Recife). Tem 26 anos de atuação no Instituto.
+                  </p>
+                </div>
+
+                <div class="d-flex flex-column align-items-end">
+                  <a href="#" class="text-body-secondary mb-1" aria-label="LinkedIn"><i class="bi bi-linkedin" style="font-size: 1.2rem;"></i></a>
+                  <a href="#" class="text-body-secondary mb-1" aria-label="Lattes"><i class="bi bi-book" style="font-size: 1.2rem;"></i></a>
+                  <a href="#" class="text-body-secondary" aria-label="GitHub"><i class="bi bi-github" style="font-size: 1.2rem;"></i></a>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card shadow">
-            <img src="../assets/images/card-image-example.jpg" class="card-img-top" width="300" height="300" alt="...">
-            <h5 class="card-header text-start">SigaBem App</h5>
-            <div class="card-body text-start">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col py-3">
+          <div class="card person-card shadow rounded-4"> 
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+
+                <img 
+                  src="caminho/para/foto_da_pessoa.jpg" 
+                  alt="Foto do Membro da Equipe" 
+                  class="rounded-circle me-3" 
+                  style="width: 80px; height: 80px; object-fit: cover;"
+                />
+
+                <div class="flex-grow-1 text-start me-3">
+                  <h5 class="card-title mb-1">Aida Ferreira</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.9rem;">
+                    Profa Aida Ferreira. Dra em Ciência da Computação. Casada. Três filhas. Adora viajar e tá sempre antenada em assuntos relacionados à IoT, GIS e robótica assistiva.
+                  </p>
+                </div>
+
+                <div class="d-flex flex-column align-items-end">
+                  <a href="#" class="text-body-secondary mb-1" aria-label="LinkedIn"><i class="bi bi-linkedin" style="font-size: 1.2rem;"></i></a>
+                  <a href="#" class="text-body-secondary mb-1" aria-label="Lattes"><i class="bi bi-book" style="font-size: 1.2rem;"></i></a>
+                  <a href="#" class="text-body-secondary" aria-label="GitHub"><i class="bi bi-github" style="font-size: 1.2rem;"></i></a>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card shadow">
-            <img src="../assets/images/card-image-example.jpg" class="card-img-top" width="300" height="300" alt="...">
-            <h5 class="card-header text-start">SigaBem App</h5>
-            <div class="card-body text-start">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
+        <div class="col py-3">
+          <div class="card person-card shadow rounded-4"> 
+            <div class="card-body">
+              <div class="d-flex align-items-center">
 
-        <div class="col">
-          <div class="card shadow">
-            <img src="../assets/images/card-image-example.jpg" class="card-img-top" width="300" height="300" alt="...">
-            <h5 class="card-header text-start">SigaBem App</h5>
-            <div class="card-body text-start">
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+                <img 
+                  src="caminho/para/foto_da_pessoa.jpg" 
+                  alt="Foto do Membro da Equipe" 
+                  class="rounded-circle me-3" 
+                  style="width: 80px; height: 80px; object-fit: cover;"
+                />
+
+                <div class="flex-grow-1 text-start me-3">
+                  <h5 class="card-title mb-1">Vânia Carvalho</h5>
+                  <p class="card-text text-muted mb-0" style="font-size: 0.9rem;">
+                    Profa Vânia Carvalho. Dra em Ciência do Solo e especialista em Cartografia Aplicada ao Geoprocessamento. Casada. Tem dois filhos e se dedica ao Instituto desde 1994.
+                  </p>
+                </div>
+
+                <div class="d-flex flex-column align-items-end">
+                  <a href="#" class="text-body-secondary mb-1" aria-label="LinkedIn"><i class="bi bi-linkedin" style="font-size: 1.2rem;"></i></a>
+                  <a href="#" class="text-body-secondary mb-1" aria-label="Lattes"><i class="bi bi-book" style="font-size: 1.2rem;"></i></a>
+                  <a href="#" class="text-body-secondary" aria-label="GitHub"><i class="bi bi-github" style="font-size: 1.2rem;"></i></a>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
+        
       </div>
 
       <!-- FOOTER -->
@@ -245,12 +295,12 @@
         <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-md-0">
           <div class="d-inline-flex align-items-center">
             <img 
-              src="../assets/images/sigabem-light-mode-without-text.png" 
+              src="../assets/images/logos/sigabem-light-mode-without-text.png" 
               alt="SigaBem Logo" 
               width="40" 
               height="40"
             />
-            <span class="ps-3 text-body-secondary">&copy; 2025 SigaBem. Todos os direitos reservados.</span>
+            <span class="ps-3 text-body-secondary">&copy; 2025 Sigabem. Todos os direitos reservados.</span>
           </div>
         </div>
 

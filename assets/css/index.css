@@ -27,14 +27,14 @@ body {
 #main-content{
     width: 100%;
     max-width: 1440px;
-    background-image: url('../images/light-background.png');
+    background-image: url('../images/background/light-background.png');
     background-repeat: repeat;
     background-attachment: fixed;
     padding: 0 10rem 0 10rem;
 }
 
 [data-bs-theme="dark"] #main-content {
-    background-image: url('../images/dark-background.png');
+    background-image: url('../images/background/dark-background.png');
 }
 
 @media (max-width: 767.98px) {
