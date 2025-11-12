@@ -23,6 +23,12 @@ body {
     padding: 0;   
 }
 
+strong,
+b,
+.fw-bold {
+    font-weight: 700 !important; 
+}
+
 /* Background e espaçamento lateral do conteúdo */
 #main-content{
     width: 100%;
@@ -107,7 +113,7 @@ body {
 /* Quando o body tem o atributo data-bs-theme="dark" */
 [data-bs-theme="dark"] .logo-dynamic {
     /* Troca para o caminho da imagem DARK mode */
-    content: url('../images/logos/sigabem-dark-mode.png');
+    content: url('../images/logos/sigabem-dark-mode-without-text.png');
 }
 
 /*
@@ -166,6 +172,10 @@ body {
  * ========================================
  */
  
+footer {
+    border-top: solid 0.5px black;
+} 
+
 footer .bi{
     transition: color 0.4s ease;
 }
