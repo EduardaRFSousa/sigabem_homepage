@@ -84,7 +84,7 @@
   transition:
     border-color 0.4s ease,
     box-shadow 0.4s ease,
-    transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); /* curva suave */
+    transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .info-card:hover {
@@ -109,7 +109,6 @@
  * 4. ARTIGOS
  * ========================================
  */
-
 .article-container-text .btn{
     background-color: var(--white);
     border-color: var(--white);
@@ -166,7 +165,7 @@
 #equipe-container {
     background-color: var(--mint);
     width: 100%;
-    margin: 5rem 0 5rem 0;
+    margin: 15rem 0 5rem 0;
 }
 
 #equipe-container .btn{

@@ -9,39 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="../assets/css/credits.css" rel="stylesheet" />
     <script src="../assets/js/color-modes.js"> </script>
-    
-    <style>
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-      
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-      .bd-mode-toggle .bi {
-        width: 1em;
-        height: 1em;
-      }
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
   </head>
 
   <body class="text-center">
@@ -152,7 +119,7 @@
             height="50"
             class="logo-dynamic"
           />
-          <a class="navbar-brand fw-bold ps-3" href="#" id="title-nav">Sigabem</a>
+          <a class="navbar-brand fw-bold ps-3" href="#" id="title-nav"><strong>Siga<span style="color: var(--mint);">bem</span></strong></a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -176,7 +143,7 @@
       <div class="row featurette py-5" id="introduction">
 
         <div class="col-lg-7 text-start align-content-center">
-          <h2 class="featurette-heading fw-normal lh-1">Conheça o time Sigabem!</h2>
+          <h2 class="featurette-heading fw-bold lh-1 pb-4" style="color: var(--mint);">Conheça o time <span style="color: var(--bs-body-color);">Siga</span>bem</h2>
           <p class="lead">Somos uma equipe formada em sua totalidade por estudantes do curso superior de Tecnologia em Análise de Desenvolvimento de Sistemas e estudantes do curso ténico integrado de Eletrônica do IFPE Campus Recife, além de nossos professores (...)</p>
         </div>
 
@@ -195,10 +162,13 @@
       <!-- CARDS -->
       <div class="row row-cols-1 g-4" id="cards-container">
 
-        <h1>Coordenadoras</h1>
+        <div class="d-flex align-items-center justify-content-center column-gap-3 p-0">
+          <i class="bi bi-people-fill" style="font-size: 3rem; color: var(--mint)"></i>
+          <h1 class="lh-1 text-start fw-bold m-0">Coordenadoras</h1>
+        </div>
         
         <div class="col">
-          <div class="card person-card shadow rounded-4">
+          <div class="card person-card shadow rounded-4" id="cardIona">
             <div class="card-body">
               <div class="d-flex align-items-center flex-md-row flex-column">
                 
@@ -287,14 +257,17 @@
           </div>
         </div>
         
-        <h1 class="pt-4">Colaboradores</h1>
+        <div class="d-flex align-items-center justify-content-center column-gap-3 p-0 mt-4">
+          <i class="bi bi-people-fill" style="font-size: 3rem; color: var(--mint)"></i>
+          <h1 class="lh-1 text-start fw-bold m-0">Colaboradores</h1>
+        </div>
 
         <div class="col">
           <div class="card person-card shadow rounded-4">
             <div class="card-body">
               <div class="d-flex align-items-center flex-md-row flex-column">
                 
-                <img 
+                <img
                   src="../assets/images/others/card-image-example.jpg" 
                   alt="Foto do Membro da Equipe"
                   class="rounded-4 me-3"
@@ -349,7 +322,10 @@
           </div>
         </div>
 
-        <h1 class="pt-4">Estudantes Pesquisadores</h1>
+        <div class="d-flex align-items-center justify-content-center column-gap-3 p-0 mt-4">
+          <i class="bi bi-people-fill" style="font-size: 3rem; color: var(--mint)"></i>
+          <h1 class="lh-1 text-start fw-bold m-0">Estudantes Pesquisadores</h1>
+        </div>
 
       </div>
 
@@ -601,21 +577,84 @@
       </div>        
 
       <!-- FINALIZAÇÃO -->
-      <div class="row featurette pt-5" id="introduction">
+      <div class="row featurette pt-5 align-items-center" id="introduction">
 
-        <div class="col-lg-7 text-start align-content-center">
-          <h2 class="featurette-heading fw-normal lh-1">Estamos no Centro de Pesquisa do IFPE Campus Recife!</h2>
-          <p class="lead">(Por foto do Centro de Pesquisa)</p>
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-geo-alt-fill me-2" style="font-size: 2rem; color: var(--mint);"></i>
+              <h2 class="lh-1 fw-bold mb-0 text-start">
+                Estamos no Centro de Pesquisa do IFPE Campus Recife!
+              </h2>
+            </div>
+
+            <p class="lead mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam omnis tempora maiores nisi alias, illo harum iste laudantium eos ipsam, aliquam in consequatur sapiente sequi quibusdam perferendis excepturi. Placeat, quas!
+            </p>
         </div>
 
-        <div class="col-lg-5">
+        <div class="col-12 col-lg-6 text-center">
           <img 
-            src="../assets/images/others/acessibility-simbol.png" 
-            class="card-img-top img-fluid rounded-3 mb-3" 
-            width="250"
-            height="250" 
-            alt="acessibility-simbol"
+            src="../assets/images/others/acessibility-simbol.png"
+            class="img-fluid rounded-4 shadow"
+            alt="Foto do Centro de Pesquisa do IFPE Campus Recife"
           />
+        </div>
+
+      </div>
+
+
+      <div class="container my-5">
+        <div class="row">
+          <!-- COLUNA ESQUERDA – REDES SOCIAIS -->
+          <div class="col-12 col-lg-6 mb-4">
+
+            <h2 class="fw-bold mb-4 text-center">Confira nossas redes sociais!</h2>
+
+            <div class="d-grid gap-3 justify-content-center">
+
+              <a href="https://www.instagram.com/_sigabem/" 
+                class="btn btn-primary d-flex align-items-center justify-content-center no-wrap rounded-4 shadow"
+                style="width: 20rem;">
+                <i class="bi bi-instagram me-2"></i>
+                Instagram Sigabem
+              </a>
+
+              <a href="https://www.instagram.com/grendeslabgeo/"
+                class="btn btn-primary d-flex align-items-center justify-content-center no-wrap rounded-4 shadow"
+                style="width: 20rem;">
+                <i class="bi bi-instagram me-2"></i>
+                Instagram GrendesLabGeo
+              </a>
+
+              <a href="https://www.linkedin.com/in/ioná-rameh-b281bb27/"
+                class="btn btn-primary d-flex align-items-center justify-content-center no-wrap rounded-4 shadow"
+                style="width: 20rem;">
+                <i class="bi bi-linkedin me-2"></i>
+                LinkedIn
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- COLUNA DIREITA – APOIADORES -->
+          <div class="col-12 col-lg-6 mb-4">
+            <h2 class="fw-bold mb-4 text-center">Nossos apoiadores</h2>
+
+            <div class="logo-container pb-4">
+              <img src="../assets/images/credits/cnpq-logo.png" class="img-fluid" width="350" alt="Logo do CNPQ" />
+            </div>
+
+            <div class="logo-container pb-3">
+              <img src="../assets/images/credits/centro-de-pesquisa-logo.png" class="img-fluid" width="350" alt="Logo do Centro de Pesquisa" />
+            </div>
+
+            <div class="logo-container">
+              <img src="../assets/images/credits/grendes-logo.png" class="img-fluid" width="350" alt="Logo do GrendesLabGeo" />
+            </div>
+
+          </div>
+
         </div>
 
       </div>

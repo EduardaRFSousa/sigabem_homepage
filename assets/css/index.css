@@ -173,7 +173,7 @@ b,
  */
  
 footer {
-    border-top: solid 0.5px black;
+    border-top: solid 0.5px var(--bs-body-color);
 } 
 
 footer .bi{
