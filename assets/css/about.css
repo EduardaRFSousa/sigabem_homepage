@@ -1,5 +1,40 @@
 @import url('index.css');
 
+/*
+ * ========================================
+ * 1. COVER PRINCIPAL
+ * ========================================
+ */
+#about-cover-section {
+    /* Ocupa a largura total (container já faz isso) */
+    position: relative; 
+    overflow: hidden; 
+    
+    /* Define 50% da altura da viewport para o COVER */
+    height: 50vh;
+}
+
+#about-cover-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container do Título */
+#cover-title-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    /* Adiciona padding lateral igual ao do Bootstrap (container) */
+    padding: 1.5rem; 
+    max-width: 70%; /* Limita a largura do título */
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+
 .list-unstyled li i {
     position: relative;
     top: -7px; /* Valor típico para compensar o line-height do texto */
