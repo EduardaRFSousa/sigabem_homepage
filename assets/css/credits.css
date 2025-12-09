@@ -20,11 +20,11 @@
         translateY(-4px);
 }
 
-#cards-container .bi{
+.cards-container .bi{
     transition: color 0.4s ease;
 }
 
-#cards-container .bi:hover {
+.cards-container .bi:hover {
     color: var(--mint);
 }
 
@@ -34,7 +34,6 @@
 
 #cardIona:hover {
     border-color: var(--white);
-
 }
 
 #cardIona .bi:hover {
