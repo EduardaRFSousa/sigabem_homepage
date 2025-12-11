@@ -7,6 +7,30 @@
 (() => {
   'use strict'
 
+  // Função para trocar o diretório das imagens temáticas
+  const swapThemeImages = (theme) => {
+    // Define o nome da pasta com base no tema
+    const themeFolder = (theme === 'dark') ? 'dark-mode' : 'light-mode';
+    
+    // Seleciona todas as imagens que você quer alternar. 
+    // DICA: Use uma classe específica, como 'theme-image-swap', para ser mais seguro.
+    const imagesToSwap = document.querySelectorAll('.theme-image-swap'); 
+
+    imagesToSwap.forEach(img => {
+      const currentSrc = img.getAttribute('src');
+      
+      // Usa Regex para substituir o nome da pasta (light-mode ou dark-mode)
+      // O regex busca por '/telas-app/' seguido por 'light-mode' OU 'dark-mode'
+      const newSrc = currentSrc.replace(
+        /(\/telas-app\/)(light-mode|dark-mode)(\/.*)/, 
+        `$1${themeFolder}$3`
+      );
+      
+      // Aplica o novo caminho (newSrc)
+      img.setAttribute('src', newSrc);
+    });
+  };
+
   const getStoredTheme = () => localStorage.getItem('theme')
   const setStoredTheme = theme => localStorage.setItem('theme', theme)
 
@@ -20,11 +44,14 @@
   }
 
   const setTheme = theme => {
+    let finalTheme = theme;
     if (theme === 'auto') {
-      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+      finalTheme = (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-bs-theme', finalTheme);
     } else {
       document.documentElement.setAttribute('data-bs-theme', theme)
     }
+    swapThemeImages(finalTheme);
   }
 
   setTheme(getPreferredTheme())

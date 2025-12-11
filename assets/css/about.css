@@ -105,14 +105,40 @@
     margin-bottom: 12rem;
 }
 
+#carouselExampleCaptions .carousel-control-prev,
+#carouselExampleCaptions .carousel-control-next {
+    display: none; /* Garante que os botões originais, se estiverem lá, sumam */
+}
+
+/* 2. Estiliza os novos botões laterais */
+.btn-carousel-side {
+    /* Faz com que se pareça com um botão simples (sem fundo) */
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    line-height: 1; /* Alinha o ícone verticalmente */
+}
+
+/* 3. Estiliza o ícone (que está no <i>) */
+.btn-carousel-side i {
+    font-size: 2.5rem; /* Aumente o tamanho para ser visível fora */
+    /* Adicione um hover para melhor UX */
+    transition: color 0.2s ease;
+}
+
+.btn-carousel-side i {
+    /* Use um cinza escuro que seja legível em fundos claros e escuros */
+    color: #333333; 
+}
+
+/* Garanta que o hover não mude para branco se o Bootstrap tentar */
+.btn-carousel-side:hover i {
+    color: #111111;
+}
 
 .list-unstyled li i {
     position: relative;
     top: -7px; /* Valor típico para compensar o line-height do texto */
     /* Você pode tentar -2px ou -4px. */
-}
-
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto 50% transparente */
-    padding: 5px;
 }
