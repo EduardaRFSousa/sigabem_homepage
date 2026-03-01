@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,160 +16,134 @@
   <body class="text-center">
 
     <!-- Dark mode switcher -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
       <symbol id="check2" viewBox="0 0 16 16">
-        <path
-          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
-        ></path>
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
       </symbol>
       <symbol id="circle-half" viewBox="0 0 16 16">
-        <path
-          d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
-        ></path>
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
       </symbol>
       <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path
-          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
-        ></path>
-        <path
-          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
-        ></path>
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
       </symbol>
       <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path
-          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-        ></path>
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
       </symbol>
     </svg>
-    <div
-      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
-    >
+
+    <!-- Dark mode toggle -->
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button
         class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
         id="bd-theme"
         type="button"
         aria-expanded="false"
         data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)"
+        aria-label="Alternar tema de cores"
       >
         <svg class="bi my-1 theme-icon-active" aria-hidden="true">
           <use href="#circle-half"></use>
         </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        <span class="visually-hidden" id="bd-theme-text">Alternar tema</span>
       </button>
-      <ul
-        class="dropdown-menu dropdown-menu-end shadow"
-        aria-labelledby="bd-theme-text"
-      >
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="light"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#sun-fill"></use>
-            </svg>
-            Light
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" role="menu">
+        <li role="none">
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false" role="menuitem">
+            <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
+            Claro
+            <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
           </button>
         </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="dark"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#moon-stars-fill"></use>
-            </svg>
-            Dark
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
+        <li role="none">
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false" role="menuitem">
+            <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
+            Escuro
+            <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
           </button>
         </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center active"
-            data-bs-theme-value="auto"
-            aria-pressed="true"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#circle-half"></use>
-            </svg>
-            Auto
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
+        <li role="none">
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true" role="menuitem">
+            <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+            Automático
+            <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
           </button>
         </li>
       </ul>
     </div>
-  
+
     <!-- STICKY NAV -->
-    <div class="sticky-bg sticky-top shadow">
-        <nav class="navbar navbar-expand-sm p-3">
+    <header>
+      <div class="sticky-bg sticky-top shadow">
+        <nav class="navbar navbar-expand-sm p-3" aria-label="Navegação principal">
           <img 
-            alt="SigaBem Logo" 
+            alt="Logo Sigabem" 
             width="50" 
             height="50"
             class="logo-dynamic"
           />
-          <a class="navbar-brand fw-bold ps-3" href="#" id="title-nav"><strong>Siga<span style="color: var(--mint);">bem</span></strong></a>
+          <a class="navbar-brand fw-bold ps-3" href="#" id="title-nav" aria-label="Sigabem - Página inicial"><strong>Siga<span style="color: var(--mint);">bem</span></strong></a>
           
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#mainNav" 
+            aria-controls="mainNav" 
+            aria-expanded="false" 
+            aria-label="Abrir ou fechar menu de navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="mainNav">
-              <ul class="navbar-nav ms-auto nav-masthead">
-                  <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Início</a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="./src/about.html">Sobre</a> </li>
-                  <li class="nav-item"> <a class="nav-link" href="./src/credits.html">Créditos</a> </li>
-              </ul>
+            <ul class="navbar-nav ms-auto nav-masthead">
+              <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Início</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="./src/about.html">Sobre</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="./src/credits.html">Créditos</a> </li>
+            </ul>
           </div>
         </nav>
-    </div>
+      </div>
+    </header>
 
     <!-- COVER -->
-    <div class="hero-cover">
-      
-      <video playsinline autoplay muted loop poster="../assets/images/others/placeholder-video-cover.jpg" id="bgvid">
-        <source src="./assets/videos/video_cover_sigabem.mp4" type="video/mp4">
-        <!-- Fallback caso o navegador não suporte video tag -->
-        Seu navegador não suporta a tag de vídeo.
-      </video>
-      
-      <div class="cover-container mx-auto">
-        <img 
-        src="./assets/images/logos/sigabem-dark-mode-with-shadow.png"
-          alt="Sigabem Logo" 
-          class="img-fluid hero-logo"
-        />
-        <h1 class="my-3">Acessibilidade no Transporte Público: <span>Agora em Tempo Real.</span> </h1>
-        <p class="lead mb-5">
-          O <strong>Siga<span style="color: var(--mint);">bem</span></strong> é uma <strong>plataforma de Internet das Coisas (IoT) que conecta Pessoas com Deficiência (PCD) e motoristas</strong>, garantindo autonomia e apoio prévio no embarque e desembarque. Quer saber mais sobre nossa iniciativa, a trajetória do projeto e como ele funciona? É só rolar a página!
-        </p>
+    <section aria-labelledby="cover-heading" id="cover">
+      <div class="hero-cover">
+        <video 
+          playsinline 
+          autoplay 
+          muted 
+          loop 
+          poster="../assets/images/others/placeholder-video-cover.jpg" 
+          id="bgvid"
+          aria-hidden="true"
+        >
+          <source src="./assets/videos/video_cover_sigabem.mp4" type="video/mp4">
+        </video>
         
+        <div class="cover-container mx-auto">
+          <img 
+            src="./assets/images/logos/sigabem-dark-mode-with-shadow.png"
+            alt="Logo Sigabem" 
+            class="img-fluid hero-logo"
+          />
+          <h1 id="cover-heading" class="my-3">Acessibilidade no Transporte Público: <span>Agora em Tempo Real.</span></h1>
+          <p class="lead mb-5">
+            O <strong>Siga<span style="color: var(--mint);">bem</span></strong> é uma <strong>plataforma de Internet das Coisas (IoT) que conecta Pessoas com Deficiência (PCD) e motoristas</strong>, garantindo autonomia e apoio prévio no embarque e desembarque. Quer saber mais sobre nossa iniciativa, a trajetória do projeto e como ele funciona? É só rolar a página!
+          </p>
+        </div>
       </div>
-      
-    </div>
+    </section>
 
     <!-- CONTEÚDO PRINCIPAL -->
-    <div class="container-fluid" id="main-content">
+    <main id="main-content" class="container-fluid">
 
       <!-- INTRODUÇÃO -->
-      
-      <div class="row container gap-5 mx-auto" id="introduction">
+      <section aria-labelledby="intro-heading" class="row container gap-5 mx-auto" id="introduction">
 
         <div class="col-12 col-lg-6 text-start p-0">
-          <h2 class="fw-bold lh-1 pb-4" style="color: var(--mint);">O Desafio da Acessibilidade no Dia a Dia</h2>
+          <h2 id="intro-heading" class="fw-bold lh-1 pb-4" style="color: var(--mint);">O Desafio da Acessibilidade no Dia a Dia</h2>
           <p class="lead">O acesso ao transporte público é um direito, mas a rotina de Pessoas com Deficiência (PCD) no embarque e desembarque ainda é marcada pela insegurança e pela falta de previsibilidade.</p>
           <p class="lead">Na prática, a ausência de comunicação direta entre o usuário e o veículo gera a incerteza do apoio assistido e dificulta a gestão do serviço de transporte.</p>
           <p class="lead">Pensando nisso, o projeto <strong style="font-weight: 500 !important;">Siga<span style="color: var(--mint);">bem</span></strong> nasceu da pesquisa para transformar essa realidade: <strong style="font-weight: 500 !important;">Desenvolvemos uma plataforma que, através da tecnologia IoT, cria um canal de comunicação inteligente para garantir autonomia, segurança e inclusão em cada trajeto.</strong></p>
@@ -179,7 +153,7 @@
           <div class="ratio shadow rounded-5 overflow-hidden" style="--bs-aspect-ratio: 177.77%;">
             <video 
               src="./assets/videos/video_introducao_sigabem.mp4" 
-              title="Vídeo Sigabem"
+              title="Vídeo de introdução ao projeto Sigabem"
               controls 
               style="width: 100%; height: 100%; object-fit: cover;"
             >
@@ -187,118 +161,117 @@
             </video>
           </div>
         </div>
+      </section>
 
-      </div>
-      
+      <!-- MÓDULOS -->
+      <section aria-labelledby="modules-heading">
+        <div class="d-flex align-items-center justify-content-center column-gap-3 pb-3">
+          <i class="bi bi-cpu" style="font-size: 2rem; color: var(--mint)" aria-hidden="true"></i>
+          <h2 id="modules-heading" class="lh-1 text-start fw-bold m-0">Conheça os quatro módulos que formam nosso sistema!</h2>
+        </div>
 
+        <div class="row row-cols-1 row-cols-lg-2 g-4" id="cards-container">
 
-      <!-- CARDS -->
-      <div class="d-flex align-items-center justify-content-center column-gap-3 pb-3">
-        <i class="bi bi-cpu" style="font-size: 2rem; color: var(--mint)"></i>
-        <h2 class="lh-1 text-start fw-bold m-0">Conheça os quatro módulos que formam nosso sistema!</h2>
-      </div>
-
-      <div class="row row-cols-1 row-cols-lg-2 g-4" id="cards-container">
-
-        <div class="col">
-          <div class="card info-card shadow rounded-4"> 
-            <h4 class="card-header text-start p-3 rounded-4"><strong>Siga<span style="color: var(--mint);">bem</span></strong> App</h4>
-            <div class="card-body text-start">
-              <img 
+          <div class="col">
+            <article class="card info-card shadow rounded-4" aria-labelledby="module-app-title">
+              <h3 id="module-app-title" class="card-header text-start p-3 rounded-4"><strong>Siga<span style="color: var(--mint);">bem</span></strong> App</h3>
+              <div class="card-body text-start">
+                <img 
                   src="./assets/images/cards-home/modulo-sigabem-app.png" 
                   class="card-img-top img-fluid rounded-3 mb-3"
-                  alt="..."
-              />
-              <p class="card-text">O Aplicativo que serve de canal de comunicação direta com a PCD, ele permite ao usuário <strong>solicitar apoio prévio ao embarque na linha desejada e enviar feedbacks</strong>, oferecendo autonomia e segurança no planejamento da viagem.</p>
-              <a href="./src/about.html#app-container" class="btn btn-outline-primary">Saiba Mais</a>
-            </div>
+                  alt="Imagem do módulo Sigabem App no celular"
+                />
+                <p class="card-text">O Aplicativo que serve de canal de comunicação direta com a PCD, ele permite ao usuário <strong>solicitar apoio prévio ao embarque na linha desejada e enviar feedbacks</strong>, oferecendo autonomia e segurança no planejamento da viagem.</p>
+                <a href="./src/about.html#app-container" class="btn btn-outline-primary">Saiba Mais sobre o Sigabem App</a>
+              </div>
+            </article>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card info-card shadow rounded-4"> 
-            <h4 class="card-header text-start p-3 rounded-4"><strong>Siga<span style="color: var(--mint);">bem</span></strong> Bus</h4>
-            <div class="card-body text-start">
-              <img 
+          <div class="col">
+            <article class="card info-card shadow rounded-4" aria-labelledby="module-bus-title">
+              <h3 id="module-bus-title" class="card-header text-start p-3 rounded-4"><strong>Siga<span style="color: var(--mint);">bem</span></strong> Bus</h3>
+              <div class="card-body text-start">
+                <img 
                   src="./assets/images/cards-home/modulo-sigabem-bus.png" 
                   class="card-img-top img-fluid rounded-3 mb-3" 
-                  alt="..."
-              />
-              <p class="card-text">O dispositivo embarcado que garante o aviso em tempo real, ele <strong>recebe a solicitação de apoio do usuário e a sinaliza imediatamente ao motorista do coletivo</strong> por meio de alertas sonoros e luminosos, promovendo o embarque assistido.</p>
-              <a href="./src/about.html#bus-container" class="btn btn-outline-primary">Saiba Mais</a>
-            </div>
+                  alt="Imagem do dispositivo eletrônico do módulo Sigabem Bus"
+                />
+                <p class="card-text">O dispositivo embarcado que garante o aviso em tempo real, ele <strong>recebe a solicitação de apoio do usuário e a sinaliza imediatamente ao motorista do coletivo</strong> por meio de alertas sonoros e luminosos, promovendo o embarque assistido.</p>
+                <a href="./src/about.html#bus-container" class="btn btn-outline-primary">Saiba Mais sobre o Sigabem Bus</a>
+              </div>
+            </article>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card info-card shadow rounded-4"> 
-            <h4 class="card-header text-start p-3 rounded-4"><strong>Siga<span style="color: var(--mint);">bem</span></strong> Stop</h4>
-            <div class="card-body text-start">
-              <img 
+          <div class="col">
+            <article class="card info-card shadow rounded-4" aria-labelledby="module-stop-title">
+              <h3 id="module-stop-title" class="card-header text-start p-3 rounded-4"><strong>Siga<span style="color: var(--mint);">bem</span></strong> Stop</h3>
+              <div class="card-body text-start">
+                <img 
                   src="./assets/images/cards-home/modulo-sigabem-stop.png" 
                   class="card-img-top img-fluid rounded-3 mb-3"
-                  alt="..."
-              />
-              <p class="card-text">O dispositivo inteligente nas paradas de ônibus, funciona como um ponto de entrada de dados, permitindo que a PCD <strong>solicite a linha de ônibus para embarque mesmo sem o aplicativo móvel.</strong></p>
-              <a href="./src/about.html#stop-container" class="btn btn-outline-primary">Saiba Mais</a>
-            </div>
+                  alt="Imagem do teclado em braille e o aplicativo móvel do módulo Sigabem Stop"
+                />
+                <p class="card-text">O dispositivo inteligente nas paradas de ônibus, funciona como um ponto de entrada de dados, permitindo que a PCD <strong>solicite a linha de ônibus para embarque mesmo sem o aplicativo móvel.</strong></p>
+                <a href="./src/about.html#stop-container" class="btn btn-outline-primary">Saiba Mais sobre o Sigabem Stop</a>
+              </div>
+            </article>
           </div>
-        </div>
 
-        <div class="col">
-          <div class="card info-card shadow rounded-4"> 
-            <h4 class="card-header text-start p-3 rounded-4"><strong>Siga<span style="color: var(--mint);">bem</span></strong> Web</h4>
-            <div class="card-body text-start">
-              <img 
+          <div class="col">
+            <article class="card info-card shadow rounded-4" aria-labelledby="module-web-title">
+              <h3 id="module-web-title" class="card-header text-start p-3 rounded-4"><strong>Siga<span style="color: var(--mint);">bem</span></strong> Web</h3>
+              <div class="card-body text-start">
+                <img 
                   src="./assets/images/cards-home/modulo-sigabem-web.png" 
                   class="card-img-top img-fluid rounded-3 mb-3"
-                  alt="..."
-              />
-              <p class="card-text"><strong>O painel de gestão e monitoramento para o gestor</strong>, uma aplicação via web que permite gerenciar a frota e o fluxo de solicitações de apoio, receber interações dos usuários e enviar notificações importantes.</p>
-              <a href="./src/about.html#web-container" class="btn btn-outline-primary">Saiba Mais</a>
-            </div>
+                  alt="Painel de gestão web do Sigabem em tela de computador"
+                />
+                <p class="card-text"><strong>O painel de gestão e monitoramento para o gestor</strong>, uma aplicação via web que permite gerenciar a frota e o fluxo de solicitações de apoio, receber interações dos usuários e enviar notificações importantes.</p>
+                <a href="./src/about.html#web-container" class="btn btn-outline-primary">Saiba Mais sobre o Sigabem Web</a>
+              </div>
+            </article>
           </div>
+
         </div>
-      </div>
+      </section>
 
       <!-- ARTIGOS -->
-      <div class="container" id="article-container">
+      <section aria-labelledby="articles-heading" id="article-container" class="container">
 
         <div class="py-3 article-container-text">
           <div class="d-flex align-items-center justify-content-center column-gap-3">
-            <i class="bi bi-journals" style="font-size: 2rem; color: var(--mint);"></i>
-            <h2 class="lh-1 text-start fw-bold m-0">Acervo Científico e Publicações</h2>
+            <i class="bi bi-journals" style="font-size: 2rem; color: var(--mint);" aria-hidden="true"></i>
+            <h2 id="articles-heading" class="lh-1 text-start fw-bold m-0">Acervo Científico e Publicações</h2>
           </div>
-            
-            <p class="pt-3">Explore aqui artigos científicos, resumos expandidos e manuais didáticos produzidos pela equipe do <strong>Siga<span style="color: var(--mint);">bem</span></strong>, incluindo materiais apresentados em revistas e 
-              eventos nacionais e internacionais. Este acervo reflete a <strong>visibilidade e a evolução técnica do projeto ao longo de sua jornada</strong>, organizado em <strong>quatro</strong> fases principais!</p>
-            
-            <p class="lead fw-bold" style="color: var(--mint);">Quer saber mais sobre a linha do tempo completa do <span style="color: var(--bs-body-color);">Siga</span>bem?</p>
-            
-              
-            <p class="lead fw-bold" style="color: var(--mint);">
-              <a 
-                  href="javascript:void(0)"
-                  id="timeline-popover"
-                  class="btn fw-bold shadow rounded-4 d-flex align-items-center justify-content-center"
-                  data-bs-toggle="popover"
-                  data-bs-trigger="focus"
-                  data-bs-title="Em Breve!"
-                  data-bs-content="A seção detalhada da Linha do Tempo ainda não está disponível."
-                  data-bs-placement="bottom"
-                  
-                  style="width: 200px; height: 50px; margin: 10px auto;"
-              >
-                  Clique Aqui
-              </a>
-            </p>
 
+          <p class="pt-3">Explore aqui artigos científicos, resumos expandidos e manuais didáticos produzidos pela equipe do <strong>Siga<span style="color: var(--mint);">bem</span></strong>, incluindo materiais apresentados em revistas e eventos nacionais e internacionais. Este acervo reflete a <strong>visibilidade e a evolução técnica do projeto ao longo de sua jornada</strong>, organizado em <strong>quatro</strong> fases principais!</p>
+
+          <p class="lead fw-bold" style="color: var(--mint);">Quer saber mais sobre a linha do tempo completa do <span style="color: var(--bs-body-color);">Siga</span>bem?</p>
+
+          <p class="lead fw-bold" style="color: var(--mint);">
+            <a 
+              href="javascript:void(0)"
+              id="timeline-popover"
+              class="btn fw-bold shadow rounded-4 d-flex align-items-center justify-content-center"
+              data-bs-toggle="popover"
+              data-bs-trigger="focus"
+              data-bs-title="Em Breve!"
+              data-bs-content="A seção detalhada da Linha do Tempo ainda não está disponível."
+              data-bs-placement="bottom"
+              aria-describedby="timeline-popover-desc"
+              style="width: 200px; height: 50px; margin: 10px auto;"
+            >
+              Clique Aqui
+            </a>
+            <span id="timeline-popover-desc" class="visually-hidden">Abre um aviso informando que a linha do tempo ainda não está disponível.</span>
+          </p>
         </div>
 
+        <!-- Accordion de artigos -->
         <div id="artigosAccordion">
 
-          <h4 class="featurette-heading lh-1 text-start fw-bold py-2"><span class="fw-bold" style="color: var(--mint);">➜</span> Fase: FACEPE 2019 - 2020</h4>
-          
+          <h3 class="featurette-heading lh-1 text-start fw-bold py-2"><span class="fw-bold" style="color: var(--mint);" aria-hidden="true">➜</span> Fase: FACEPE 2019 - 2020</h3>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -308,11 +281,11 @@
                 data-bs-target="#collapseOne" 
                 aria-expanded="false" 
                 aria-controls="collapseOne"
+                aria-label="Expandir: Revista Principia 2022 - Inteligência geográfica conectando pessoas com deficiência ao sistema de transporte público na RMR"
               >
-                <h6 class="mb-0 p-1">Revista Principia 2022: Inteligência geográfica conectando pessoas com deficiência ao sistema  de transporte público na RMR</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">Revista Principia 2022: Inteligência geográfica conectando pessoas com deficiência ao sistema de transporte público na RMR</h4>
               </button>
             </div>
-                
             <div id="collapseOne" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -321,21 +294,24 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_Revista_Principia_2022.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: Revista Principia 2022 (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
-
                 <embed 
                   src="./assets/documents/FACEPE-2019-2020/Artigo-Submetido-Revista-Principia-Julho2022.pdf#toolbar=1&scrollbar=1" 
                   type="application/pdf" 
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: Revista Principia 2022"
+                  title="Artigo - Revista Principia 2022"
                 />
               </div>
             </div>
           </div>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -345,11 +321,11 @@
                 data-bs-target="#collapseTwo" 
                 aria-expanded="false" 
                 aria-controls="collapseTwo"
+                aria-label="Expandir: Inteligência geográfica e tecnologia na contribuição ao acesso de pessoas com deficiência ao transporte público no Recife"
               >
-                <h6 class="mb-0 p-1">Inteligência geográfica e tecnologia na contribuição ao acesso de pessoas com deficiência ao tranporte público no Recife</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">Inteligência geográfica e tecnologia na contribuição ao acesso de pessoas com deficiência ao transporte público no Recife</h4>
               </button>
             </div>
-                
             <div id="collapseTwo" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -358,8 +334,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_Mobile_Software_Livre.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: Sigabem Mobile Software Livre (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -368,10 +345,13 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: Inteligência geográfica e transporte público no Recife"
+                  title="Artigo - Inteligência geográfica e transporte público no Recife"
                 />
               </div>
             </div>
           </div>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -381,11 +361,11 @@
                 data-bs-target="#collapseThree" 
                 aria-expanded="false" 
                 aria-controls="collapseThree"
+                aria-label="Expandir: Plataforma Sigabem - Tecnologia e Inteligência geográfica para auxiliar no transporte público de pessoas com deficiência na cidade do Recife"
               >
-                <h6 class="mb-0 p-1">Plataforma Sigabem: Tecnologia e Inteligência geográfica para auxiliar no transporte público de pessoas com deficiência na cidade do Recife</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">Plataforma Sigabem: Tecnologia e Inteligência geográfica para auxiliar no transporte público de pessoas com deficiência na cidade do Recife</h4>
               </button>
             </div>
-                
             <div id="collapseThree" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -394,8 +374,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_Web_Software_Livre.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: Sigabem Web Software Livre (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -404,12 +385,14 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: Plataforma Sigabem e transporte público no Recife"
+                  title="Artigo - Plataforma Sigabem e transporte público no Recife"
                 />
               </div>
             </div>
           </div>
 
-          <h4 class="featurette-heading lh-1 text-start fw-bold py-2"><span class="fw-bold" style="color: var(--mint);">➜</span> Fase: CNPq 2021 - 2024</h4>
+          <h3 class="featurette-heading lh-1 text-start fw-bold py-2"><span class="fw-bold" style="color: var(--mint);" aria-hidden="true">➜</span> Fase: CNPq 2021 - 2024</h3>
 
           <div class="card article-card mb-2">
             <div class="card-header p-0">
@@ -420,11 +403,11 @@
                 data-bs-target="#collapseFour" 
                 aria-expanded="false" 
                 aria-controls="collapseFour"
+                aria-label="Expandir: ArcGIS em ação - desenvolvendo aplicações com uma plataforma inovadora"
               >
-                <h6 class="mb-0 p-1">ArcGIS em ação: desenvolvendo aplicações com uma plataforma inovadora</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">ArcGIS em ação: desenvolvendo aplicações com uma plataforma inovadora</h4>
               </button>
             </div>
-                
             <div id="collapseFour" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -433,8 +416,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_ArcGIS_em_acao.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: ArcGIS em ação (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -443,10 +427,13 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: ArcGIS em ação"
+                  title="Artigo - ArcGIS em ação"
                 />
               </div>
             </div>
           </div>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -456,11 +443,11 @@
                 data-bs-target="#collapseFive" 
                 aria-expanded="false" 
                 aria-controls="collapseFive"
+                aria-label="Expandir: Aplicativo AcessaSaúde - Facilitando a acessibilidade em equipamentos públicos de saúde na RMR"
               >
-                <h6 class="mb-0 p-1">Aplicativo AcessaSaúde: Facilitando a acessibilidade em equipamentos públicos de saúde na RMR</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">Aplicativo AcessaSaúde: Facilitando a acessibilidade em equipamentos públicos de saúde na RMR</h4>
               </button>
             </div>
-                
             <div id="collapseFive" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -469,8 +456,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_Aplicativo_AcessaSaude.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: Aplicativo AcessaSaúde (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -479,10 +467,13 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: Aplicativo AcessaSaúde"
+                  title="Artigo - Aplicativo AcessaSaúde"
                 />
               </div>
             </div>
           </div>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -492,11 +483,11 @@
                 data-bs-target="#collapseSix" 
                 aria-expanded="false" 
                 aria-controls="collapseSix"
+                aria-label="Expandir: Projeto Sigabem - Migrações de Aplicações"
               >
-                <h6 class="mb-0 p-1">Projeto Sigabem: Migrações de Aplicações</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">Projeto Sigabem: Migrações de Aplicações</h4>
               </button>
             </div>
-                
             <div id="collapseSix" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -505,8 +496,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_Migracao_de_Aplicacoes.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: Projeto Sigabem Migração de Aplicações (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -515,13 +507,15 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: Projeto Sigabem Migração de Aplicações"
+                  title="Artigo - Projeto Sigabem Migração de Aplicações"
                 />
               </div>
             </div>
           </div>
 
-          <h4 class="featurette-heading lh-1 text-start fw-bold py-2"><span class="fw-bold" style="color: var(--mint);">➜</span> Fase: IFES 2022</h4>
-          
+          <h3 class="featurette-heading lh-1 text-start fw-bold py-2"><span class="fw-bold" style="color: var(--mint);" aria-hidden="true">➜</span> Fase: IFES 2022</h3>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -531,11 +525,11 @@
                 data-bs-target="#collapseSeven" 
                 aria-expanded="false" 
                 aria-controls="collapseSeven"
+                aria-label="Expandir: Actas JIICEU 2023 - Dispositivo para apoio à acessibilidade de pessoas com deficiência ao transporte público"
               >
-                <h6 class="mb-0 p-1">Actas JIICEU 2023: Dispositivo para apoio à acessibilidade de pessoas com deficiência ao transporte público</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">Actas JIICEU 2023: Dispositivo para apoio à acessibilidade de pessoas com deficiência ao transporte público</h4>
               </button>
             </div>
-                
             <div id="collapseSeven" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -544,8 +538,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_Actas_JIICEU_2023.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: Actas JIICEU 2023 (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -554,10 +549,13 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: Actas JIICEU 2023"
+                  title="Artigo - Actas JIICEU 2023"
                 />
               </div>
             </div>
           </div>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -567,11 +565,11 @@
                 data-bs-target="#collapseEight" 
                 aria-expanded="false" 
                 aria-controls="collapseEight"
+                aria-label="Expandir: Assistive System for Enhancing Accessibility of Public Transport for People with Disabilities"
               >
-                <h6 class="mb-0 p-1">Assistive System for Enhancing Acessibility of Public Transport for People with Disabilities</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">Assistive System for Enhancing Accessibility of Public Transport for People with Disabilities</h4>
               </button>
             </div>
-                
             <div id="collapseEight" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -580,8 +578,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_Assistive_System_Document.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: Assistive System for Enhancing Accessibility (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -590,10 +589,13 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: Assistive System for Enhancing Accessibility"
+                  title="Artigo - Assistive System for Enhancing Accessibility"
                 />
               </div>
             </div>
           </div>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -603,11 +605,11 @@
                 data-bs-target="#collapseNine" 
                 aria-expanded="false" 
                 aria-controls="collapseNine"
+                aria-label="Expandir: EBOOK - Manual Didático das oficinas do projeto nas escolas públicas"
               >
-                <h6 class="mb-0 p-1">EBOOK: Manual Didático das oficinas do projeto nas escolas públicas</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">EBOOK: Manual Didático das oficinas do projeto nas escolas públicas</h4>
               </button>
             </div>
-                
             <div id="collapseNine" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -616,8 +618,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_EBOOK_Manual_Oficinas.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: EBOOK Manual Didático das Oficinas (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -626,10 +629,13 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do EBOOK: Manual Didático das Oficinas"
+                  title="EBOOK - Manual Didático das Oficinas"
                 />
               </div>
             </div>
           </div>
+
           <div class="card article-card mb-2">
             <div class="card-header p-0">
               <button 
@@ -639,11 +645,11 @@
                 data-bs-target="#collapseTen" 
                 aria-expanded="false" 
                 aria-controls="collapseTen"
+                aria-label="Expandir: Solução Tecnológica para Solicitação de Apoio ao Embarque de Pessoas com Deficiência ao Transporte Público na RMR"
               >
-                <h6 class="mb-0 p-1">Solução Tecnológica para Solicitação de Apoio ao Embarque de Pessoas com Deficiência ao Transporte Público na RMR</h6>
+                <h4 class="mb-0 p-1" style="font-size: 1rem; font-weight: normal;">Solução Tecnológica para Solicitação de Apoio ao Embarque de Pessoas com Deficiência ao Transporte Público na RMR</h4>
               </button>
             </div>
-                
             <div id="collapseTen" class="collapse" data-bs-parent="#artigosAccordion">
               <div class="card-body">
                 <div class="text-end"> 
@@ -652,8 +658,9 @@
                     class="btn btn-sm btn-outline-secondary" 
                     download="Sigabem_Solucao_Tecnologica_Artigo.pdf"
                     target="_blank"
+                    aria-label="Baixar PDF: Solução Tecnológica para Embarque de PCD (abre em nova aba)"
                   >
-                    <i class="bi bi-download me-1"></i> Baixar PDF
+                    <i class="bi bi-download me-1" aria-hidden="true"></i> Baixar PDF
                   </a>
                 </div>
                 <embed 
@@ -662,93 +669,93 @@
                   width="100%"
                   height="500px"
                   class="rounded shadow mt-3"
+                  aria-label="Visualizador do artigo: Solução Tecnológica para Embarque de PCD"
+                  title="Artigo - Solução Tecnológica para Embarque de PCD"
                 />
               </div>
             </div>
           </div>
 
-          <h4 class="featurette-heading lh-1 text-start fw-bold py-2"><span class="fw-bold" style="color: var(--mint);">➜</span> Fase: CNPq 2024 - atual</h4>
+          <h3 class="featurette-heading lh-1 text-start fw-bold py-2"><span class="fw-bold" style="color: var(--mint);" aria-hidden="true">➜</span> Fase: CNPq 2024 - atual</h3>
 
           <div class="card article-card mb-2">
             <div class="card-header p-2 w-100 text-center">
-              
-              <h6 class="mb-0">Em breve</h6>
-              
+              <p class="mb-0">Em breve</p>
             </div>
-                
           </div>
 
         </div>
-
-      </div>
+      </section>
 
       <!-- EQUIPE -->
-      <div class="text-start p-4 rounded-4 shadow" id="equipe-container">
-    
+      <section aria-labelledby="team-heading" class="text-start p-4 rounded-4 shadow" id="equipe-container">
         <div class="d-flex flex-column flex-lg-row align-items-center">
-
           <div class="flex-grow-1 me-lg-5 mb-3 mb-lg-0">
-            <h2 class="featurette-heading fw-bold lh-1">Gostou do projeto? Nos acompanhe!</h2>
+            <h2 id="team-heading" class="featurette-heading fw-bold lh-1">Gostou do projeto? Nos acompanhe!</h2>
             <p class="lead">Faça parte do movimento por um transporte público mais inclusivo! Siga nossas redes para acompanhar o desenvolvimento da plataforma, as novidades da equipe e do GrendesLabGeo, nosso laboratório de pesquisa.</p>
             <a 
               href="./src/credits.html" 
               class="btn fw-bold shadow rounded-4 d-flex align-items-center justify-content-center"
               style="width: 200px; height: 50px;"
-              class="mx-auto mx-lg-0 mt-3" >
+            >
               Conheça a Equipe
             </a>
           </div>
-
           <img 
             class="card-img-top img-fluid team-icon" 
-            alt="team-simbol"
+            alt="Ícone representando a equipe do projeto Sigabem"
           />
+        </div>
+      </section>
 
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 px-5 mt-5 text-center text-md-start" aria-label="Rodapé">
+      <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-md-0">
+        <div class="d-inline-flex align-items-center">
+          <img
+            alt="Logo Sigabem" 
+            width="40" 
+            height="40"
+            class="logo-dynamic"
+          />
+          <span class="ps-3 text-body-secondary">&copy; 2025 Sigabem. Todos os direitos reservados.</span>
         </div>
       </div>
 
-      <!-- FOOTER -->
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 px-5 mt-5 text-center text-md-start">
-        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-md-0">
-          <div class="d-inline-flex align-items-center">
-            <img
-              alt="Sigabem Logo" 
-              width="40" 
-              height="40"
-              class="logo-dynamic"
-            />
-            <span class="ps-3 text-body-secondary">&copy; 2025 Sigabem. Todos os direitos reservados.</span>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
-          <ul class="nav list-unstyled d-flex mb-0">
-            <li class="ms-3">
-              <a href="https://www.instagram.com/_sigabem/" class="text-body-secondary" aria-label="Instagram">
-                  <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a href="mailto:ionarameh@recife.ifpe.edu.br" class="text-body-secondary" aria-label="Email">
-                <i class="bi bi-envelope" style="font-size: 1.5rem;"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </footer>
-      
-    </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+        <ul class="nav list-unstyled d-flex mb-0" aria-label="Redes sociais">
+          <li class="ms-3">
+            <a href="https://www.instagram.com/_sigabem/" class="text-body-secondary" aria-label="Sigabem no Instagram (abre em nova aba)" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-instagram" style="font-size: 1.5rem;" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="mailto:ionarameh@recife.ifpe.edu.br" class="text-body-secondary" aria-label="Enviar e-mail para ionarameh@recife.ifpe.edu.br">
+              <i class="bi bi-envelope" style="font-size: 1.5rem;" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
-        // Inicializa todos os Popovers na página
-        document.addEventListener('DOMContentLoaded', function () {
-            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-            
-            // Mapeia todos os elementos e cria uma nova instância de Popover para cada um
-            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
-        });
+      document.addEventListener('DOMContentLoaded', function () {
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+      });
+    </script>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
   </body>
 </html>
